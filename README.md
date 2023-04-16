@@ -1,5 +1,5 @@
 # Napptive X WeMakeDevs Cloud Native Hackathon Project By Code-Up Team
-cloud native app project created for Napptive X WeMakeDev Hackathon
+cloud native app project created for <a href="https://wemakedevs.org/events/hackathons/napptive" target="blank">Napptive X WeMakeDev Hackathon</a>
 
 <h1><b>Flask Blog</b></h1>
 This is a simple Flask blog application that retrieves blog posts from an external API and displays them on the homepage. Users can click on a post to view its details, or navigate to the about page.
