@@ -1,0 +1,21 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: flask-blog
+  annotations: # include optional annotations and/or labels.
+    version: v1.0.1
+    description: "Hack's Blog using Flask framework"
+spec:
+  components:
+    - name: flask-blog-comp
+      type: webservice
+      properties:
+        image: pmking27/docker-flask-test
+        ports:
+          - port: 3000
+            expose: true
+      traits:
+        - type: napptive-ingress # a napptive-ingress trait to get a public endpoint
+          properties:
+            port: 3000
+            path: /

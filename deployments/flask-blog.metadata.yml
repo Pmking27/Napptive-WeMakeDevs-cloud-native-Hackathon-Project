@@ -1,0 +1,18 @@
+apiVersion: core.napptive.com/v1alpha1
+kind: ApplicationMetadata
+name: "flask-blog"
+version: v1.0.1
+description: "Hack's Blog using Flask framework"
+keywords:
+  - "server"
+  - "flask"
+  - "blog"
+  - "python"
+  - "github"
+license: "MIT"
+url: "https://github.com/Pmking27/Napptive-WeMakeDevs-cloud-native-Hackathon-Project"
+doc: "https://github.com/Pmking27/Napptive-WeMakeDevs-cloud-native-Hackathon-Project#readme"
+logo:
+  - src: "https://static.javatpoint.com/tutorial/flask/images/flask-tutorial.png"
+    type: "image/png"
+    size: "36x36"
