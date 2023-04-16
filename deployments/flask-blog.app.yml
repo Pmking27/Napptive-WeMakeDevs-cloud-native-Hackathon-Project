@@ -10,7 +10,7 @@ spec:
     - name: flask-blog-comp
       type: webservice
       properties:
-        image: pmking27/docker-flask-test
+        image: pmking27/flask-blog
         ports:
           - port: 3000
             expose: true
