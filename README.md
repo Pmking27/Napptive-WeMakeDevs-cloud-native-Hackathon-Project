@@ -24,4 +24,4 @@ To send a message through the contact form, fill out the form fields and click "
 
 Credits
 This project was developed by [Prathamesh Mandavkar :
-<a href="https://github.com/Pmking27" target="blank">Pmking27</a> | Suraj BHosale : <a href="https://github.com/SurajBhosale003" target="blank">SurajBhosale003</a>].
+<a href="https://github.com/Pmking27" target="blank">Pmking27</a> | Suraj Bhosale : <a href="https://github.com/SurajBhosale003" target="blank">SurajBhosale003</a>].
