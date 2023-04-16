@@ -1,0 +1,109 @@
+{% include "header.html" %}
+
+<!-- 
+<script type="text/javascript">
+const observer = new IntersectionObserver((entries) =>{
+  entries.forEach((entry) => {
+    console.log(entry);
+    if(entry.isIntersecting){
+      entry.target.classList.add('.show');
+    }
+    else{
+      entry.target.classList.remove('.show');
+    }
+  });
+
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((entries) => observer(entries));
+
+
+</script>
+<style>
+  .hidden{
+    opacity: 0;
+    transition: all 1s;
+  }
+  .show{
+    opacity: 1;
+
+  }
+</style> -->
+
+  <!-- Page Header -->
+  <header class="masthead " style="background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_960_720.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1  class="anime1"><em>HACK's Blog</em></h1>
+            <hr>
+            <span class="subheading"><em><strong>A Cloud Native Project created by Code-Up Team for Hackathon.</strong></em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<style>
+
+.anime1:hover {
+  scale: 1.2;
+  transition: all 1s;
+}
+.anime1{
+  transition: all 1s;
+}
+
+.anime4:hover {
+  scale: 1.1;
+  transition: all 1s;
+}
+.anime4{
+  transition: all 1s;
+
+}
+
+
+</style>
+  <!-- Main Content -->
+  <div class="container">
+
+
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% for post in all_posts %}
+        <div class="post-preview anime4">
+          <a href="{{ url_for('show_post', index=post.id) }}">
+            <h2 class="post-title">
+              {{post.title}}
+            </h2>
+            <h3 class="post-subtitle">
+              {{post.subtitle}}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="{{post.twitter}}">{{post.author}}</a>
+            on {{post.date}}</p>
+        </div>
+        <hr>
+        {% endfor %}
+
+
+        <!-- Pager -->
+        <!-- <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.298/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/R14rs46L4KGNSyCP/scene.splinecode"></spline-viewer> -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.298/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/zq40UEk0eAytbMWT/scene.splinecode"></spline-viewer>
+  <hr>
+  
+
+{% include "footer.html" %}
